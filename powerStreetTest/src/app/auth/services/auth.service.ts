@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { first } from 'rxjs/operators';
-import { User } from 'firebase';
-import { auth } from 'firebase/app';
+import {User} from '@firebase/auth-types';
 import { AngularFireAuth } from '@angular/fire/auth';
 
 @Injectable()

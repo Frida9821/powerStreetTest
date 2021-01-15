@@ -26,11 +26,10 @@ import { environment } from 'src/environments/environment';
     SearchModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AuthService,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
