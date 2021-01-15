@@ -1,0 +1,19 @@
+<div class="login">
+    <div class="logo-head"><img src="../../assets/images/LOGO.png"></div>
+
+    <form class="custom-form form-group" name="loginForm" [formGroup]="loginForm" (ngSubmit)="onLogin()"  novalidate>
+
+        <mat-card-title>
+            INICIA SESIÓN
+          </mat-card-title>
+
+                <input class="form-control"  formControlName="email" type="email" matInput placeholder="Email" required>
+
+                <input class="form-control"  formControlName="password" type="password" matInput placeholder="Contraseña" required>
+
+                <button mat-button type="submit" >Login</button>
+        </form>
+
+
+
+</div>
